@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.8;
+    background: #f8f5ef;
+    color: #2d2d2d;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 320px;
+    background: linear-gradient(135deg, #1e3a5f, #3b6b8f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    font-family: Georgia, serif;
+}
+
+.tagline {
+    font-size: 21px;
+    font-style: italic;
+}
+
+/* Main */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* Introduction */
+.intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.image-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 450px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.image-container p {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #555;
+}
+
+/* Common Sections */
+.about,
+.timeline,
+.legacy {
+    background: white;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #1e3a5f;
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #d4a017;
+    padding-bottom: 10px;
+}
+
+.about p,
+.legacy p {
+    margin-bottom: 18px;
+    font-size: 17px;
+}
+
+/* Timeline */
+.timeline-item {
+    display: flex;
+    gap: 25px;
+    padding: 18px 0;
+    border-left: 4px solid #3b6b8f;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.timeline-item span {
+    min-width: 70px;
+    font-weight: bold;
+    color: #d18b00;
+    font-size: 18px;
+}
+
+.timeline-item p {
+    font-size: 16px;
+}
+
+/* Quote */
+.quote {
+    background: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 50px 30px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+blockquote {
+    font-size: 26px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.quote p {
+    font-size: 18px;
+}
+
+/* Legacy */
+.legacy {
+    background: #fff8e7;
+}
+
+/* Footer */
+footer {
+    background: #172b3a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .tagline {
+        font-size: 17px;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    .about,
+    .timeline,
+    .legacy {
+        padding: 25px;
+    }
+
+    .image-container img {
+        height: 400px;
+    }
+
+    .timeline-item {
+        gap: 12px;
+    }
+
+    blockquote {
+        font-size: 21px;
+    }
+}
